@@ -1,0 +1,50 @@
+Environment preflight
+---------------------
+timestamp_utc: 2026-08-21T14:20:29.929265+00:00
+requested_environment: ai_env
+ai_env_active: False
+conda_on_PATH: (not found)
+python_on_PATH: (not found)
+python_executable_used: C:\Users\JI YANCHEN\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+python_version: 3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]
+fallback: bundled workspace Python runtime; no packages were installed or executed from the system environment
+
+=== parse_candidates.py ===
+$ C:\Users\JI YANCHEN\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\JI YANCHEN\Documents\ChatGPT\NTU学习（专业课）\.codex_stage_ee6405\project\src\parse_candidates.py
+--- stdout ---
+Reconstructed Task 2 candidates: A, B, C, D, E, F
+Candidate structures written to C:\Users\JI YANCHEN\Documents\ChatGPT\NTUѧϰ��רҵ�Σ�\.codex_stage_ee6405\project\outputs\candidate_structures.txt
+Task 2 yield check: workers dumped sacks of garbage and junk into a bin
+CFG structural rules available: 8
+--- stderr ---
+
+exit_code: 0
+
+=== validate_trees.py ===
+$ C:\Users\JI YANCHEN\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\JI YANCHEN\Documents\ChatGPT\NTU学习（专业课）\.codex_stage_ee6405\project\src\validate_trees.py
+--- stdout ---
+Computed valid candidates: B, C, E
+Validation results written to C:\Users\JI YANCHEN\Documents\ChatGPT\NTUѧϰ��רҵ�Σ�\.codex_stage_ee6405\project\outputs\validation_results.txt
+Post-hoc reference check (B,C,E): PASS
+--- stderr ---
+
+exit_code: 0
+
+=== generate_valid_parses.py ===
+$ C:\Users\JI YANCHEN\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\JI YANCHEN\Documents\ChatGPT\NTU学习（专业课）\.codex_stage_ee6405\project\src\generate_valid_parses.py
+--- stdout ---
+Generated complete S parses: 10
+Candidate trees matched by generated parses: B, C, E
+Generated parses written to C:\Users\JI YANCHEN\Documents\ChatGPT\NTUѧϰ��רҵ�Σ�\.codex_stage_ee6405\project\outputs\generated_parses.txt
+--- stderr ---
+
+exit_code: 0
+
+=== render_trees.py ===
+$ C:\Users\JI YANCHEN\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe C:\Users\JI YANCHEN\Documents\ChatGPT\NTU学习（专业课）\.codex_stage_ee6405\project\src\render_trees.py
+--- stdout ---
+Rendered 6 Task 2 candidate PNGs, Task 1 B, and one overview
+--- stderr ---
+
+exit_code: 0
+
