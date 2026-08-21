@@ -1,0 +1,123 @@
+Task 2 reconstructed bracket trees
+
+Expected yield: workers dumped sacks of garbage and junk into a bin
+
+(A) (S (NP workers) (VP (V dumped) (NP (NP (NP sacks) (PP (P of) (NP (NP garbage) (C and) (NP junk)))) (PP (P into) (NP (D a) (N bin))))))
+  productions:
+    1 x C -> and
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> D N
+    1 x NP -> NP C NP
+    2 x NP -> NP PP
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP
+
+(B) (S (NP workers) (VP (V dumped) (NP (NP (NP (NP sacks) (PP (P of) (NP garbage))) (CNP (C and) (NP junk))) (PP (P into) (NP (D a) (N bin))))))
+  productions:
+    1 x C -> and
+    1 x CNP -> C NP
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> D N
+    1 x NP -> NP CNP
+    2 x NP -> NP PP
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP
+
+(C) (S (NP workers) (VP (V dumped) (NP (NP (NP sacks) (PP (P of) (NP garbage))) (CNP (C and) (NP (NP junk) (PP (P into) (NP (D a) (N bin))))))))
+  productions:
+    1 x C -> and
+    1 x CNP -> C NP
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> D N
+    1 x NP -> NP CNP
+    2 x NP -> NP PP
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP
+
+(D) (S (NP workers) (VP (V dumped) (NP (NP (NP sacks) (PP (P of) (NP garbage))) (C and) (NP junk)) (PP (P into) (NP (D a) (N bin)))))
+  productions:
+    1 x C -> and
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> D N
+    1 x NP -> NP C NP
+    1 x NP -> NP PP
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP PP
+
+(E) (S (NP workers) (VP (VP (V dumped) (NP (NP sacks) (PP (P of) (NP (NP garbage) (CNP (C and) (NP junk)))))) (PP (P into) (NP (D a) (N bin)))))
+  productions:
+    1 x C -> and
+    1 x CNP -> C NP
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> D N
+    1 x NP -> NP CNP
+    1 x NP -> NP PP
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP
+    1 x VP -> VP PP
+
+(F) (S (NP workers) (VP (VP (VP (V dumped) (NP sacks)) (PP (P of) (NP (CNP (NP garbage) (C and)) (NP junk)))) (PP (P into) (NP (D a) (N bin)))))
+  productions:
+    1 x C -> and
+    1 x CNP -> NP C
+    1 x D -> a
+    1 x N -> bin
+    1 x NP -> CNP NP
+    1 x NP -> D N
+    1 x NP -> garbage
+    1 x NP -> junk
+    1 x NP -> sacks
+    1 x NP -> workers
+    1 x P -> into
+    1 x P -> of
+    2 x PP -> P NP
+    1 x S -> NP VP
+    1 x V -> dumped
+    1 x VP -> V NP
+    2 x VP -> VP PP
+
