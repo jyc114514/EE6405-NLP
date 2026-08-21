@@ -1,0 +1,48 @@
+EE6405 Task 2 bottom-up CFG validation
+========================================
+
+Structural rules:
+S -> NP VP
+VP -> V NP
+VP -> VP PP
+NP -> NP PP
+NP -> NP CNP
+CNP -> C NP
+PP -> P NP
+NP -> D N
+
+Lexical rules:
+NP -> workers
+NP -> sacks
+NP -> garbage
+NP -> junk
+V -> dumped
+P -> of
+P -> into
+C -> and
+D -> a
+N -> bin
+
+Candidate A: INVALID
+  - ROOT/S[1]/VP[1]/NP[0]/NP[1]/PP[1]: NP -> NP C NP (production is not licensed by the grammar)
+
+Candidate B: VALID
+  - no grammar or yield errors
+
+Candidate C: VALID
+  - no grammar or yield errors
+
+Candidate D: INVALID
+  - ROOT/S[1]: VP -> V NP PP (production is not licensed by the grammar)
+  - ROOT/S[1]/VP[1]: NP -> NP C NP (production is not licensed by the grammar)
+
+Candidate E: VALID
+  - no grammar or yield errors
+
+Candidate F: INVALID
+  - ROOT/S[1]/VP[0]/VP[1]/PP[1]: NP -> CNP NP (production is not licensed by the grammar)
+  - ROOT/S[1]/VP[0]/VP[1]/PP[1]/NP[0]: CNP -> NP C (production is not licensed by the grammar)
+
+Computed valid candidates: B, C, E
+Post-hoc reference check (B,C,E): PASS
+
