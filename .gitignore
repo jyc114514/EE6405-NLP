@@ -1,0 +1,8 @@
+# The classroom slide is retained locally for auditability but is not released.
+original_question.png
+
+# Generated Python cache files.
+__pycache__/
+*.py[cod]
+
+
